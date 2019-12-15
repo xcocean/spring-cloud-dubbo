@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: spring-cloud-consumer-demo
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  application:
+    name: spring-cloud-consumer-demo
+  scan:
+    base-packages: com.qbccn.consumer.demo.comtroller
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.112.1:8848  #我用nacos做注册中心
+server:
+  port: 8080
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: threadpool
+  endpoints:
+    web:
+      exposure:
+        include: "*"
