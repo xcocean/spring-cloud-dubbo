@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <url>http://www.qbccn.com</url>
     <properties>
-        <dubbo.version>2.7.2</dubbo.version>
+        <dubbo.version>2.7.15</dubbo.version>
         <dubbo-actuator.version>2.7.1</dubbo-actuator.version>
         <dubbo-spring-boot-starter>2.7.3</dubbo-spring-boot-starter>
         <dubbo-registry-nacos>2.6.7</dubbo-registry-nacos>
